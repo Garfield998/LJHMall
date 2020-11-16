@@ -1,10 +1,7 @@
 <template>
   <div id="cart-item">
     <div class="item-selector">
-      <check-button
-        :isChecked="itemInfo.checked"
-        @click.native="checkClcik"
-      ></check-button>
+      <check-button :isChecked="itemInfo.checked" @click.native="checkClcik" />
     </div>
     <div class="item-img">
       <img :src="itemInfo.image" alt="商品图片" />
@@ -21,7 +18,7 @@
 </template>
 
 <script>
-import CheckButton from "@/components/content/checkButton/CheckButton";
+import CheckButton from "components/content/checkButton/CheckButton";
 
 export default {
   name: "CartListItem",
